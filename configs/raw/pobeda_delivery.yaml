@@ -1,20 +1,4 @@
-tasks:
-  - import_data_from_ftp:
-      class: SomeClass
-      arguments:
-        - name: arg1
-          type: bool
-          value: True
-        - name: arg2
-          type: list
-          value: [1,2,3]
-        - name: arg3
-          type: int
-          value: 4
-        - name: arg4
-          type: float
-          value: 3.4
-        - name: arg5
-          type: str
-          value: hello World
-  
+info:
+  bucket_name: data-science
+  folder: /srv/95.68.243.12/Upload
+  minio_name: myminio

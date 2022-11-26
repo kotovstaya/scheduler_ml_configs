@@ -1,0 +1,40 @@
+info:
+  spark_host: spark-master
+  spark_port: 7077
+  s3_host: minio:9001
+  s3_access_key: admin
+  s3_secret_key: admin123
+
+  db_host: postgres
+  db_port: 5432
+  db_user: qos
+  db_password: qos
+  db_name: qos
+  bucket_name: data-science
+parameters:
+  columns:
+    - Номер магазина id
+    - Номер кассы id
+    - Номер чека
+    - Дата время открытия чека
+    - Дата время закрытия чека
+    - Табель кассира (сотрудника) id
+    - Id SKU
+    - 'Количество товара: суммарно по 1 SKU либо 1 единицы SKU'
+    - Единица измерения
+    - 'Стоимость SKU: суммарно по 1 SKU либо 1 единицы SKU'
+    - 'Способ оплаты: нал/безнал'
+    - Наличие бонусной карты
+
+  fix_date: True
+  separated_file_for_each_shop: False
+  system_code: pobeda
+  data_type: purchases
+  shop_num_column_name: Номер магазина id
+  dt_or_dttm_column_name: Дата время открытия чека
+  receipt_code_columns: null
+  dt_or_dttm_format: '%d.%m.%Y %H:%M:%S'
+
+  dt_from: '2022-11-25'
+  dt_to: '2022-11-25'
+  filename_fmt: '{data_type}_{year:04d}{month:02d}{day:02d}.csv'

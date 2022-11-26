@@ -1,0 +1,4 @@
+info:
+  bucket_name: data-science
+  folder: /srv/95.68.243.12/Upload
+  minio_name: myminio
